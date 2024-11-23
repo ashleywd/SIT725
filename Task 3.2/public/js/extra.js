@@ -1,15 +1,10 @@
 $(document).ready(function(){
-    $('.modal').modal();
-  });
-
-  $(document).ready(function() {
+    $('.modal').modal(); // Initialise modal class as a modal
     $('.modal-trigger').on('click', function() {
-      // Change button color using inline CSS
-      $(this).css('background-color', 'red');
-      $(this).css('color', 'white'); // Optional: Change text color too
-      
-      // Alternatively, toggle a class for predefined styles
-      // $(this).toggleClass('clicked-button');
-    });
+      if ($(this).css('background-color') === 'rgb(255, 0, 0)') { // Check if the colour is red
+        $(this).css('background-color', ''); // Reset to default
+      } else {
+        $(this).css('background-color', 'red'); // Change colour to red
+      }
   });
-  
+});

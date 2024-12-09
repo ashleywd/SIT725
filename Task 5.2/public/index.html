@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <!-- Import JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Personal Styles -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="header">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Ashley Dillon - SIT725 2024 T3</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>  
+              <!-- Modal Trigger -->
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Calculator</a>
+            </li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h2>Simple Addition Calculator</h2>
+        <div class="divider"></div>
+        
+        <!-- Calculator Form -->
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="num1" type="number" class="validate">
+            <label for="num1">Number 1</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="num2" type="number" class="validate">
+            <label for="num2">Number 2</label>
+          </div>
+        </div>
+        <div class="row">
+          <button id="calculateBtn" class="btn waves-effect waves-light">Calculate</button>
+        </div>
+        
+        <div id="calculationResult" class="center-align">
+          <h5>Result: <span id="resultText">0</span></h5>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" id="resetBtn" class="waves-effect waves-light btn-flat">Reset</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
+    
+    
+    <div id="content" class="container">
+      <h2>Welcome to my Example Site</h2>
+      <div class="divider"></div>
+      <div class="row valign-wrapper center-align">
+        <div class="col s10 push-s2"><span class="flow-text">My name is Ashley Dillon and I am a student at Deakin University.</span></div>
+        <div class="col s2 pull-s10"><img class="responsive-img circle" src="/assets/ProfilePic.jpg"></div>
+      </div>
+      <div class="divider"></div>
+      <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Hac diam potenti mauris convallis etiam praesent aliquet per ac. Hendrerit nunc euismod, nibh dui aliquam malesuada. Pellentesque felis posuere class nulla ridiculus. Elit nullam amet egestas inceptos etiam ligula sodales. Elit ultricies maximus enim congue venenatis dictum elementum. Penatibus vehicula porta nullam primis cursus.</p>
+
+      <p>Malesuada aptent sapien sollicitudin nascetur habitant libero facilisi. Inceptos magna pharetra morbi eros natoque nec. Netus mattis magnis mauris sagittis magna. Interdum est eros curae convallis felis sagittis finibus. Risus lacus nisi habitant vulputate porttitor sapien. Arcu arcu iaculis proin tristique nec morbi. Mollis nullam fusce magnis nulla tincidunt dignissim. Aptent finibus etiam elit tempus gravida platea morbi eget at.</p>
+        
+      <p>Suspendisse ultricies curabitur cras arcu integer ullamcorper elit urna. Primis tincidunt inceptos odio eleifend penatibus rutrum posuere maecenas dictum. Suspendisse lectus ridiculus massa egestas tellus fames non aenean. Phasellus eros sociosqu; sem per facilisi sit mollis quam. Malesuada suscipit fames nullam mollis elementum; sit mollis lacinia habitant. Auctor inceptos libero libero arcu platea a vehicula. Duis porttitor molestie auctor egestas sollicitudin. Fringilla feugiat venenatis amet egestas consectetur eget quam odio.</p>
+        
+      <p>Curae conubia taciti pulvinar amet primis nullam magna commodo. Massa eget penatibus auctor ullamcorper turpis vestibulum. Lobortis et molestie congue sociosqu sem. Amet eleifend ut ultrices accumsan proin. Condimentum per magna sodales sem mi elementum; per faucibus ultrices. Tristique amet urna penatibus amet condimentum convallis ultrices. Sem torquent at vel; lacus dis et suscipit aptent vitae. Sapien habitasse blandit diam ultrices at cras mollis. Risus lacinia vestibulum morbi ac montes odio adipiscing.</p>
+        
+      <p>Duis imperdiet leo curae sagittis mus vivamus sit. Semper penatibus netus auctor sed sem hac fermentum. Id elit ultricies viverra justo taciti morbi ligula. Auctor fusce amet conubia tristique laoreet tempor felis ornare. Urna suspendisse turpis condimentum in suspendisse quis orci taciti. Nec nunc congue morbi tempor urna semper ultricies.</p>
+    </div>
+    <div id="footer">
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Thank you for Visiting!</h5>
+              <p class="grey-text text-lighten-4">Please find here a list of link to useful sites.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/src/model.js"></script>
+    <script src="/src/view.js"></script>
+    <script src="/src/controller.js"></script>
+    <script>
+      console.log("Materialize version:", M.version);
+      document.addEventListener('DOMContentLoaded', function() {
+          console.log('DOM fully loaded');
+      });
+      </script>
+  </body>
+  </html>
+    

@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <!-- Import JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+
+    <!-- Materialize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+      defer
+    ></script>
+
+    <!-- Socket.io -->
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js" defer></script>
+
+    <!-- Application Scripts -->
+    <script src="/src/model.js" defer></script>
+    <script src="/src/view.js" defer></script>
+    <script src="/src/controller.js" defer></script>
+
+    <!-- Personal Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="content" class="container">
+      <h2>Chat Room</h2>
+      <div class="divider"></div>
+      <div class="chat-container">
+        <div class="chat-messages">
+          <ul id="messages"></ul>
+        </div>
+        <form id="form">
+          <input
+            id="input"
+            autocomplete="off"
+            placeholder="Type a message..."
+          />
+          <button type="submit" class="btn waves-effect waves-light">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+    <div id="footer">
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Thank you for Visiting!</h5>
+              <p class="grey-text text-lighten-4">
+                Please find here a list of link to useful sites.
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

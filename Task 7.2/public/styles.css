@@ -1,0 +1,76 @@
+.modal-content {
+  color: black;
+}
+
+.divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#form {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+#input {
+  border: 1px solid #ddd;
+  padding: 10px;
+  flex-grow: 1;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+#input:focus {
+  outline: none;
+}
+#form > button {
+  background: #333;
+  border: none;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#messages > li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+#messages > li:nth-child(odd) {
+  background: #efefef;
+}
+
+.chat-container {
+  max-width: 800px;
+  margin: 20px auto;
+  height: calc(100vh - 300px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: white;
+}
+
+.username {
+  font-weight: bold;
+  color: #2196f3;
+  margin-right: 8px;
+}
+
+.message-text {
+  color: #333;
+  margin-left: 8px;
+}

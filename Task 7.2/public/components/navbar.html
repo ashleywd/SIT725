@@ -1,0 +1,48 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="index.html" class="brand-logo">Ashley Dillon - SIT725 2024 T3</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li>
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1"
+          >Calculator</a
+        >
+      </li>
+      <li><a href="chat.html">Chat</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h2>Simple Addition Calculator</h2>
+    <div class="divider"></div>
+
+    <!-- Calculator Form -->
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="num1" type="number" class="validate" />
+        <label for="num1">Number 1</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="num2" type="number" class="validate" />
+        <label for="num2">Number 2</label>
+      </div>
+    </div>
+    <div class="row">
+      <button id="calculateBtn" class="btn waves-effect waves-light">
+        Calculate
+      </button>
+    </div>
+
+    <div id="calculationResult" class="center-align">
+      <h5>Result: <span id="resultText">0</span></h5>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" id="resetBtn" class="waves-effect waves-light btn-flat"
+      >Reset</a
+    >
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>

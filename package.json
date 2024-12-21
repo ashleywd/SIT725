@@ -1,13 +1,6 @@
 {
   "dependencies": {
     "express": "^4.21.1",
-    "mongodb": "6.11"
-  }
-}
-
-{
-  "dependencies": {
-    "express": "^4.21.1",
     "mongodb": "6.11",
     "socket.io": "^4.8.1"
   },
